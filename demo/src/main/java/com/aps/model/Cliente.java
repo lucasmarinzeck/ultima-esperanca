@@ -17,10 +17,15 @@ public class Cliente implements Serializable{
 	
 	public Cliente() {}
 	
-	public Cliente(String email, String nome, String senha) {
-		this.email = email;
+	public Cliente(String email, String nome, String senha, String telefone, String rua, String numero, String bairro, String cep) {
 		this.nome = nome;
+		this.telefone = telefone;
+		this.email = email;
 		this.senha = senha;
+		this.rua = rua;
+		this.numero = numero;
+		this.bairro = bairro;
+		this.cep = cep;
 	}
 	
 	@Id
@@ -30,6 +35,11 @@ public class Cliente implements Serializable{
 	private String nome;
 	private String email;
 	private String senha;
+	private String telefone;
+	private String rua;
+	private String numero;
+	private String bairro;
+	private String cep;
 	
 	public Long getId() {
 		return id;
@@ -66,4 +76,35 @@ public class Cliente implements Serializable{
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+	public String getTelefone() {
+		return telefone;
+	}
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+	public String getRua() {
+		return rua;
+	}
+	public void setRua(String rua) {
+		this.rua = rua;
+	}
+	public String getNumero() {
+		return numero;
+	}
+	public void setNumero(String numero) {
+		this.numero = numero;
+	}
+	public String getBairro() {
+		return bairro;
+	}
+	public void setBairro(String bairro) {
+		this.bairro = bairro;
+	}
+	public String getCep() {
+		return cep;
+	}
+	public void setCep(String cep) {
+		this.cep = cep;
+	}
+	
 }
