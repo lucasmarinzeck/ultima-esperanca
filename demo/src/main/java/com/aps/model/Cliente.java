@@ -15,6 +15,14 @@ public class Cliente implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
+	public Cliente() {}
+	
+	public Cliente(String email, String nome, String senha) {
+		this.email = email;
+		this.nome = nome;
+		this.senha = senha;
+	}
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
