@@ -19,14 +19,9 @@ public class CadastroForm {
 		return "cadastro";
 	}
 	
-	@GetMapping("/login")
-	public String login() {
-		return "login";
-	}
-	
 	@PostMapping("/cadastro")
 	public String cadastroSubmit(Cliente cliente) {
 		clienteRepo.save(cliente);
-		return "redirect:/login";
+		return "redirect:/cadastro";
 	}
 }

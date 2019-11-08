@@ -8,4 +8,5 @@ import com.aps.model.Cliente;
 @Repository
 public interface ClienteRepository extends CrudRepository<Cliente, Long>{
 
+	public Cliente findByEmail(String email);
 }
