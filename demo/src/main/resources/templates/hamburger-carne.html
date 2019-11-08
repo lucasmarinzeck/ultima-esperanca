@@ -1,0 +1,112 @@
+<!doctype html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultaq.net.nz/thymeleaf/layout">
+  <head>
+    <title>ByteBurger</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Changa+One|Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <header class="nav-container container">
+        <div class="topnav" id="myTopnav">
+          <a ><img src="assets/imagens/logo.png"></a>
+          <div class="navbar">
+               <a th:href="@{/index}" >Home</a>
+            <a th:href="@{/cardapio}">Cardápio</a>
+            <a th:href="@{/contato}">Sobre nós</a>
+            <a th:href="@{/}">Login</a>
+            <a href="car.html"><i class="fas fa-shopping-cart"></i></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+
+        
+      </header>
+        <section class="container-fluid cardapio">
+          <div class="container">
+            <div class="title text-center">
+                <h1>Hambúrgers de Carne</h1>
+            </div>
+            
+            <div class="row box">
+              <div class="col-sm-5 box-image">
+                <img src="assets/imagens/hamburger-carne.png " alt="">
+              </div>
+              <div class="col-sm-7 box-text">
+                <h2>Angus Byte</h2>
+                <small>Hambúrger de carne (Angus 180g), Tomate, Alface, Cebola, Cheedar</small>
+                <h3>Preço R$ 15,99 reais</h3>
+                <form action="#" th:action="@{/}" method="post">
+	                <input type="text" value="Angus Byte">
+	                <input type="text" value="15,99">
+	                <button> Adicionar ao carrinho </button>
+                </form>
+              </div>
+            </div>
+
+            <div class="row box">
+                <div class="col-sm-5 box-image">
+                    <img src="assets/imagens/hamburger-carne-2.png" alt="">
+                </div>
+                <div class="col-sm-7 box-text">
+                  <h2>Beef Kilo Byte</h2>
+                  <small>Hambúrger de frango (150g), Tomate, Alface, Cebola, Cheedar</small>
+                  <h3>Preço R$ 13,50 reais</h3>
+                  <form action="#" th:action="@{/}" method="post">
+                	<input type="text" value="15,99">
+                	<button> Adicionar ao carrinho </button>
+               	</form>
+                </div>
+              </div>
+
+            <div class="row box">
+              <div class="col-sm-5 box-image">
+                <img src="assets/imagens/crisp-2.png" alt="">
+              </div>
+              <div class="col-sm-7 box-text">
+                <h2>Chicken Mega Byte</h2>
+                <small>2 Hambúrger de frango, Tomate, Alface, Cebola, Cheedar</small>
+                <h3>Preço R$ 16,50 reais</h3>
+                <button> Adicionar ao carrinho </button>
+              </div>
+            </div>
+            
+
+            <div class="row box">
+                <div class="col-sm-5 box-image">
+                    <img src="assets/imagens/ChickenSandwich.png" alt="">
+                </div>
+                <div class="col-sm-7 box-text">
+                  <h2>Chicken Zetta Byte</h2>
+                  <small>Hambúrger de frango, Alface, Molho Verde</small>
+                  <h3>Preço R$ 8,00 reais</h3>
+                  <button> Adicionar ao carrinho </button>
+                </div>
+              </div>
+
+
+          </div>
+              
+        </section>
+
+       <!-- Optional JavaScript -->
+    <script src="assets/js/canvas.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
