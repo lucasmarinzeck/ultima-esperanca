@@ -1,13 +1,16 @@
 package com.aps.controller;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 @Controller
-public class Home {
+
+public class Contato {
+
+		
+		@GetMapping("/contato")
+		public String contatoView() {
+			return "contato";
+		}
+		
 	
-	@GetMapping("/index")
-	public String homeView() {
-		return "index";
-	}
-	
+
 }

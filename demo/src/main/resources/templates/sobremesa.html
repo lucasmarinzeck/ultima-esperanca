@@ -1,4 +1,4 @@
-<!Doctype html>
+<!doctype html>
 <html xmlns:th="http://thymeleaf.org"
 	  xmlns:layout="http://www.ultaq.net.nz/thymeleaf/layout">
   <head>
@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     
     <link rel="stylesheet" href="assets/css/style.css">
@@ -18,7 +19,7 @@
   </head>
   <body>
       <header class="nav-container container">
-        <div class="topnav" id="myTopnav">
+         <div class="topnav" id="myTopnav">
           <a ><img src="assets/imagens/logo.png"></a>
           <div class="navbar">
                <a th:href="@{/index}" >Home</a>
@@ -36,54 +37,34 @@
       </header>
         <section class="container-fluid cardapio">
           <div class="container">
-            <div class="title ">
-                <h1>Menu</h1>
+            <div class="title text-center">
+                <h1>Sobremesa</h1>
             </div>
             
-            <div class="col-sm-4 tab-lanche ">
-              <a th:href="@{hamburger-carne}">
-                <img src="assets/imagens/frangao.png" alt="">
-                <h2>Hambúrger de Carne</h2>
-               
-              </a>
-            </div>
-            <div class="col-sm-4 tab-lanche">
-              <a th:href="@{hamburger-frango}">
-                <img src="assets/imagens/burger-de-frango.png" alt="">
-                <h2>Hambúrger de Frango</h2>
-               
-              </a>
-            </div>
-            <div class="col-sm-4 tab-lanche">
-              <a th:href="@{hamburger-vegano}">
-                <img src="assets/imagens/burger-soja.png" alt="">
-                <h2>Hambúrger de Soja</h2>
-              
-              </a>
-            </div>
 
-            <div class="col-sm-4 tab-lanche">
-              <a th:href="@{drinks}"> 
-                <img src="assets/imagens/pepsi.png" alt="">
-                <h2>Bebidas</h2>
-                
-              </a>
-            </div>
-            <div class="col-sm-4 tab-lanche">
-              <a th:href="@{acompanhamento}">
-                <img src="assets/imagens/acompanhamento.png" alt="">
-                <h2>Acompanhamento</h2>
-                
-              </a>
-            </div>
-            <div class="col-sm-4 tab-lanche">
-              <a th:href="@{sobremesa}">
-                <img src="assets/imagens/sobremesa.png" alt="">
-                <h2>Sobremesa</h2>
-                
-              </a>
-            </div>
+            <div class="row box">
+                <div class="col-sm-5 box-image">
+                    <img src="assets/imagens/oreo.png" alt="">
+                </div>
+                <div class="col-sm-7 box-text">
+                  <h2>Oreo</h2>
+                  <small>Sabor: Creme, Chocolate, Misto</small>
+                  <h3>Preço R$ 8,00 reais</h3>
+                  <button> Adicionar ao carrinho </button>
+                </div>
+              </div>
 
+              <div class="row box">
+                    <div class="col-sm-5 box-image">
+                        <img src="assets/imagens/morango.png" alt="">
+                    </div>
+                    <div class="col-sm-7 box-text">
+                      <h2>Shake de Morango</h2>
+                      <small></small>
+                      <h3>Preço R$ 10,99 reais</h3>
+                      <button> Adicionar ao carrinho </button>
+                    </div>
+                  </div>
 
           </div>
               
