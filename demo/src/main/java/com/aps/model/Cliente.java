@@ -1,17 +1,23 @@
 package com.aps.model;
 
 import java.io.Serializable;
+import java.util.Collection;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 
-import javassist.SerialVersionUID;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
-public class Cliente implements Serializable{
+public class Cliente implements UserDetails, Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
@@ -29,11 +35,9 @@ public class Cliente implements Serializable{
 	}
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+	private String email;
 	@Column(name="nome_cliente")
 	private String nome;
-	private String email;
 	private String senha;
 	private String telefone;
 	private String rua;
@@ -41,13 +45,12 @@ public class Cliente implements Serializable{
 	private String bairro;
 	private String cep;
 	
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
+//	@ManyToMany
+//	@JoinTable(name = "usuario_roles", joinColumns = @JoinColumn(
+//				name = "cliente_id", referencedColumnName = "id_cliente"),
+//				inverseJoinColumns = @JoinColumn(
+//				name = "role_id", referencedColumnName = "role"))
+//	private List<Role> roles;
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
@@ -106,5 +109,45 @@ public class Cliente implements Serializable{
 	public void setCep(String cep) {
 		this.cep = cep;
 	}
+
+	@Override
+	public String getPassword() {
+		return this.senha;
+	}
+
+	@Override
+	public String getUsername() {
+		return this.email;
+	}
+
+	@Override
+	public boolean isAccountNonExpired() {
+		return true;
+	}
+
+	@Override
+	public boolean isAccountNonLocked() {
+		return true;
+	}
+
+	@Override
+	public boolean isCredentialsNonExpired() {
+		return true;
+	}
+
+	@Override
+	public boolean isEnabled() {
+		return true;
+	}
+
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		return null;
+	}
 	
+	@Override
+	public String toString() {
+		return "Cliente [email=" + email + ", senha=" + senha + ", nome=" + nome + ", telefone="
+				+ telefone + ", rua=" + rua + ", numero=" + numero + ", bairro=" + bairro + ", cep=" + cep + "]";
+	}
 }

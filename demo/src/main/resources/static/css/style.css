@@ -157,13 +157,13 @@ label{
  
 }
 #burger{
-  width: 100%;
+  width: 450px;
   height: 200px;
   background-color: transparent;
   background-repeat: no-repeat;
 }
 #queijo{
-  width: 100%;
+  width: 450px;
   height: 120px;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -176,7 +176,7 @@ label{
  
 }
 #adicional{
-  width: 100%;
+  width: 450px;
   height: 120px;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -186,6 +186,15 @@ label{
   background-color: #171717;
   width: 40%;
 
+}
+.vitrine button{
+	background-color: red; 
+	border: none; 
+	padding: 18px 32px; 
+	text-transform: uppercase; 
+	letter-spacing: 4px;
+	border-radius: 25px;
+	margin-left: 6rem;"
 }
 .teste{
 
@@ -215,10 +224,7 @@ display: list-item;
   text-transform: uppercase;
   padding: 32px 18px;
 }
-.cardapio{
-  
-  padding: 64px 0;
-}
+
 
 .tab-lanche{
   padding: 2rem 0 4rem 2rem;
