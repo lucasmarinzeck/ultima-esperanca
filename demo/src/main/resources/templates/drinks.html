@@ -48,7 +48,11 @@
                 <h2>Pepsi</h2>
                 
                 <h3>Preço R$ 3,99 reais</h3>
-                <button> Adicionar ao carrinho </button>
+                <form action="#" th:action="@{/carrinho-add}" method="post">
+	                <input type="text" name="item" value="Pepsi">
+	                <input type="text" name="valor" value="3.99">
+	                <button type="submit"> Adicionar ao carrinho </button>
+                 </form>
               </div>
             </div>
 
@@ -60,7 +64,11 @@
                   <h2>H2 OH!</h2>
                   <small>Sabor: Laranja, Limão</small>
                   <h3>Preço R$ 2,50 reais</h3>
-                  <button> Adicionar ao carrinho </button>
+                  <form action="#" th:action="@{/carrinho-add}" method="post">
+	                <input type="text" name="item" value="H2 OH!">
+	                <input type="text" name="valor" value="2.50">
+	                <button type="submit"> Adicionar ao carrinho </button>
+                 </form>
                 </div>
             </div>
             <div class="row box">
@@ -68,10 +76,14 @@
                     <img src="img/guarana.png" alt="">
                 </div>
                 <div class="col-sm-7 box-text">
-                    <h2>Guarana</h2>
+                    <h2>Guaraná</h2>
                     <small>Sabor: Melancia, Tradicional</small>
                     <h3>Preço R$ 3,50 reais</h3>
-                    <button> Adicionar ao carrinho </button>
+                    <form action="#" th:action="@{/carrinho-add}" method="post">
+		                <input type="text" name="item" value="Guaraná">
+		                <input type="text" name="valor" value="3.50">
+		                <button type="submit"> Adicionar ao carrinho </button>
+                 	</form>
                 </div>
             </div>
             <div class="row box">
@@ -82,7 +94,11 @@
                     <h2>Ice Tea</h2>
                     <small>Sabor: Pêssego</small>
                     <h3>Preço R$ 3,50 reais</h3>
-                    <button> Adicionar ao carrinho </button>
+                    <form action="#" th:action="@{/carrinho-add}" method="post">
+		                <input type="text" name="item" value="Ice Tea">
+		                <input type="text" name="valor" value="3.50">
+		                <button type="submit"> Adicionar ao carrinho </button>
+                 	</form>
                 </div>
             </div>
          

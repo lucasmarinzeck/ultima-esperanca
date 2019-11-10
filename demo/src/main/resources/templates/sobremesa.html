@@ -44,13 +44,17 @@
 
             <div class="row box">
                 <div class="col-sm-5 box-image">
-                    <img src="img/oreo.png" alt="">
+                    <img src="img/oreo-baunilha.png" alt="">
                 </div>
                 <div class="col-sm-7 box-text">
-                  <h2>Oreo</h2>
-                  <small>Sabor: Creme, Chocolate, Misto</small>
-                  <h3>Preço R$ 8,00 reais</h3>
-                  <button> Adicionar ao carrinho </button>
+                  <h2>Shake Zetta Byte </h2>
+                  <small>Oreo de Baunilha</small>
+                  <h3>Preço R$ 8,99 reais</h3>
+                  <form action="#" th:action="@{/carrinho-add}" method="post">
+		                <input type="text" name="item" value="Zetta Shake">
+		                <input type="text" name="valor" value="8.99">
+		                <button type="submit"> Adicionar ao carrinho </button>
+                 	</form>
                 </div>
               </div>
 
@@ -59,13 +63,32 @@
                         <img src="img/morango.png" alt="">
                     </div>
                     <div class="col-sm-7 box-text">
-                      <h2>Shake de Morango</h2>
-                      <small></small>
+                      <h2>Shake Mega Byte </h2>
+                      <small>Shake de Morango</small>
                       <h3>Preço R$ 10,99 reais</h3>
-                      <button> Adicionar ao carrinho </button>
+                     <form action="#" th:action="@{/carrinho-add}" method="post">
+		                <input type="text" name="item" value="Shake Mega Byte">
+		                <input type="text" name="valor" value="10.99">
+		                <button type="submit"> Adicionar ao carrinho </button>
+                 	</form>
                     </div>
                   </div>
-
+                  
+				<div class="row box">
+                    <div class="col-sm-5 box-image">
+                        <img src="img/sundae.png" alt="">
+                    </div>
+                    <div class="col-sm-7 box-text">
+                      <h2>Byte Sundae</h2>
+                      <small>Sabor Chocolate</small>
+                      <h3>Preço R$ 4,99 reais</h3>
+                      <form action="#" th:action="@{/carrinho-add}" method="post">
+		                <input type="text" name="item" value="Byte Sundae">
+		                <input type="text" name="valor" value="4.99">
+		                <button type="submit"> Adicionar ao carrinho </button>
+                 	</form>
+                    </div>
+                  </div>
           </div>
               
         </section>

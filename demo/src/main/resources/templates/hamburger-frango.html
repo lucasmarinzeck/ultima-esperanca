@@ -46,9 +46,13 @@
               </div>
               <div class="col-sm-7 box-text">
                 <h2>Chicken Byte</h2>
-                <small>Hambúrger de frango (200g), Tomate, Alface, Cebola, Molho</small>
-                <h3>Preço R$ 14,99 reais</h3>
-                <button> Adicionar ao carrinho </button>
+                <small>Hambúrger de frango (160g), Tomate, Alface, Cebola, Molho</small>
+                <h3>Preço R$ 11,50 reais</h3>
+              	<form action="#" th:action="@{/carrinho-add}" method="post">
+	                <input type="text" name="item" value="Chicken Byte">
+	                <input type="text" name="valor" value="11.50">
+	                <button type="submit"> Adicionar ao carrinho </button>
+                </form>
               </div>
             </div>
 
@@ -58,9 +62,13 @@
                 </div>
                 <div class="col-sm-7 box-text">
                   <h2>Chicken Kilo Byte</h2>
-                  <small>Hambúrger de frango (150g), Tomate, Alface, Cebola, Cheedar</small>
-                  <h3>Preço R$ 13,50 reais</h3>
-                  <button> Adicionar ao carrinho </button>
+                  <small>Hambúrger de frango (160g), Alface, Cebola, Cheedar</small>
+                  <h3>Preço R$ 8,50 reais</h3>
+                  <form action="#" th:action="@{/carrinho-add}" method="post">
+	                <input type="text" name="item" value="Chicken Kilo Byte">
+	                <input type="text" name="valor" value="8.50">
+	                <button type="submit"> Adicionar ao carrinho </button>
+                   </form>
                 </div>
               </div>
 
@@ -72,7 +80,11 @@
                 <h2>Chicken Mega Byte</h2>
                 <small>2 Hambúrger de frango, Tomate, Alface, Cebola, Cheedar</small>
                 <h3>Preço R$ 16,50 reais</h3>
-                <button> Adicionar ao carrinho </button>
+                <form action="#" th:action="@{/carrinho-add}" method="post">
+	                <input type="text" name="item" value="Chicken Mega Byte">
+	                <input type="text" name="valor" value="16.50">
+	                <button type="submit"> Adicionar ao carrinho </button>
+                   </form>
               </div>
             </div>
             
@@ -84,8 +96,12 @@
                 <div class="col-sm-7 box-text">
                   <h2>Chicken Zetta Byte</h2>
                   <small>Hambúrger de frango, Alface, Molho Verde</small>
-                  <h3>Preço R$ 8,00 reais</h3>
-                  <button> Adicionar ao carrinho </button>
+                  <h3>Preço R$ 9,00 reais</h3>
+                  <form action="#" th:action="@{/carrinho-add}" method="post">
+	                <input type="text" name="item" value="Chicken Zetta Byte">
+	                <input type="text" name="valor" value="9.00">
+	                <button type="submit"> Adicionar ao carrinho </button>
+                   </form>
                 </div>
               </div>
 

@@ -22,8 +22,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	protected void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable().authorizeRequests()
 			.antMatchers(HttpMethod.GET, "/").permitAll() //TODO Para todos os controllers
-			.antMatchers(HttpMethod.GET, "/admistracao").hasRole("ADMIN")
-			.antMatchers(HttpMethod.POST, "/admistracao").hasRole("ADMIN")
 			.antMatchers(HttpMethod.GET, "/carrinho").authenticated()  //Só pode acesar se passar pelo login
 			.antMatchers(HttpMethod.POST, "/carrinho").authenticated() //Só pode acesar se passar pelo login	
 		.and()

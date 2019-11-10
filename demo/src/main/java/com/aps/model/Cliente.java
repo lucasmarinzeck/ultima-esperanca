@@ -12,6 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.validation.constraints.NotNull;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -35,6 +36,7 @@ public class Cliente implements UserDetails, Serializable{
 	}
 	
 	@Id
+	@NotNull
 	private String email;
 	@Column(name="nome_cliente")
 	private String nome;
