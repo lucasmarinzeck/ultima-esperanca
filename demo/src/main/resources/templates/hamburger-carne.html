@@ -26,7 +26,7 @@
             <a th:href="@{/cardapio}">Cardápio</a>
             <a th:href="@{/contato}">Sobre nós</a>
             <a th:href="@{/cadastro}">Login</a>
-            <a href="car.html"><i class="fas fa-shopping-cart"></i></a>
+            <a href="/list-itens"><i class="fas fa-shopping-cart"></i></a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
             </a>
@@ -46,12 +46,14 @@
                 <img src="img/hamburger-carne.png " alt="">
               </div>
               <div class="col-sm-7 box-text">
+
                 <h2>Onion Byte</h2>
                 <small>Hambúrger de Carne (120g), Molho Barbecue, Queijo, Cebola Empanada, Maionese</small>
                 <h3>Preço R$ 11,99 reais</h3>
                 <form action="#" th:action="@{/carrinho-add}" method="post">
 	                <input type="text" name="item" value="Onion Byte">
 	                <input type="text" name="valor" value="11.99">
+                  
 	                <button type="submit"> Adicionar ao carrinho </button>
                 </form>
               </div>
@@ -65,6 +67,7 @@
                   <h2>Angus Kilo Byte</h2>
                   <small>Hambúrger de Carne (Angus 180g), Tomate, Alface, Cebola Roxa, Cheedar</small>
                   <h3>Preço R$ 13,50 reais</h3>
+
                   <form action="#" th:action="@{/carrinho-add}" method="post">
 	                <input type="text" name="item" value="Angus Kilo Byte">
 	                <input type="text" name="valor" value="13.50">
