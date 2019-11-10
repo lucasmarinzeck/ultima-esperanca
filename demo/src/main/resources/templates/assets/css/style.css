@@ -5,7 +5,7 @@ html {
 *, *:before, *:after {
   box-sizing: border-box;
 }
-* {box-sizing: border-box; list-style-type: none;}
+* {box-sizing: border-box; list-style-type:none;}
 body { margin:0; background-color: #171717; color: #fff;}
 
 a{color: #fff; text-decoration: none; transition:.5s ease;}
@@ -157,13 +157,13 @@ label{
  
 }
 #burger{
-  width: 450px;
+  width: 100%;
   height: 200px;
   background-color: transparent;
   background-repeat: no-repeat;
 }
 #queijo{
-  width: 450px;
+  width: 100%;
   height: 120px;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -176,7 +176,7 @@ label{
  
 }
 #adicional{
-  width: 450px;
+  width: 100%;
   height: 120px;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -185,16 +185,7 @@ label{
   padding: 8rem 0 0 12rem;
   background-color: #171717;
   width: 40%;
-  color: #fff;
-}
-.vitrine button{
-	background-color: red; 
-	border: none; 
-	padding: 18px 32px; 
-	text-transform: uppercase; 
-	letter-spacing: 4px;
-	border-radius: 25px;
-	margin-left: 6rem;
+
 }
 .teste{
 
@@ -206,24 +197,13 @@ display: list-item;
 }
 .teste label {
 	display: flex;
-	
 }
 .teste p{
 	margin-left: 32px;
 }
 
-.pao .a {
-	word-spacing: 21rem;
-}
-.pao .b {
-	word-spacing: 20rem;
-}
-.pao .c {
-	word-spacing: 20.5rem;
-}
-burger{
-	
-}
+
+
 /* Cardapio Page */
 .title{
   text-align: center;
@@ -235,7 +215,10 @@ burger{
   text-transform: uppercase;
   padding: 32px 18px;
 }
-
+.cardapio{
+  
+  padding: 64px 0;
+}
 
 .tab-lanche{
   padding: 2rem 0 4rem 2rem;
@@ -798,54 +781,6 @@ textarea:focus {
 }
 
 
-
-
-
-
-/* sobre nos */
-
-
-
-.equipe .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  padding: 32px;
-  margin: 0px 18px;
-  
-}
-.equipe h2,p{
-  color: #000;
-}
-.equipe .title {
-  color: #000;
-  font-size: 18px;
-}
-
-
-.equipe a {
-  text-decoration: none;
-  font-size: 22px;
-  color: #000;
-}
-
-
-/* Footer */
-.rodape{
-	margin-top: 64px;
-	border-top: 1px solid #fff;
-}
-.rodape li{
-	margin-left: -4rem;
-	padding: 0.4rem 0;
-}
-
-.rodape ul{
-	margin-top: 2rem;
-}
 
 
 

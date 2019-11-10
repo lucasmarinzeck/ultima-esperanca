@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Changa+One|Montserrat&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
   <body>
       <header class="nav-container container">
         <div class="topnav" id="myTopnav">
-          <a ><img src="assets/imagens/logo.png"></a>
+          <a ><img src="img/logo.png"></a>
           <div class="navbar">
             <a th:href="@{/index}" >Home</a>
             <a th:href="@{/cardapio}">Cardápio</a>
@@ -45,13 +45,13 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="assets/imagens/capa-1.png" class="d-block w-100" alt="...">
+              <img src="img/capa-1.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="assets/imagens/capa-2.png" class="d-block w-100" alt="...">
+              <img src="img/capa-2.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="assets/imagens/capa-3.png" class="d-block w-100" alt="...">
+              <img src="img/capa-3.png" class="d-block w-100" alt="...">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -66,54 +66,49 @@
   
       </section>
     
-      <section class="container"> 
-
-          <div class="title "><h1>Opções</h1></div>
+      <section class=""> 
+		<div class="container">
+          <div class="title"><h1>Opções</h1></div>
 
             <div class="col-sm-6">
-            <div class="teste">
+            <div class="teste pao">
             <h2> Pão </h2>
-            <label class="container">
-              <input type="radio" name="pao" onclick="pao()">Italiano
+            <label class="container a">
+              <input type="radio" name="pao" onclick="pao()">Italiano  R$4,00
               <span class="checkmark"></span>
             </label>
             
-            <label class="container">
-              <input type="radio" name="pao" onclick="pao2()">Frances
+            <label class="container b">
+              <input type="radio" name="pao" onclick="pao2()">Frances R$3,85
               <span class="checkmark"></span>
             </label>
             
-            <label class="container"><input type="radio" name="pao" onclick="pao3()">Brioche
+            <label class="container c"><input type="radio" name="pao" onclick="pao3()">Brioche  R$4,00
             <span class="checkmark"></span>
             </label>
             
-            <label class="container"><input type="radio" name="pao" onclick="pao4()">Supremo
-            <span class="checkmark"></span>
-            </label>
+            
             </div>
             
-            <div class="teste">
+            <div class="teste burger">
             <h2> Hamburger </h2>
             
             <label class="container">
-              <input type="radio" name="burger"  onclick="burger()">Hamburguer Tradicional 
+              <input type="radio" name="burger"  onclick="burger()">Hamburguer Tradicional R$2,00
               <span class="checkmark"></span>
             </label> 
             
             <label class="container">
-              <input type="radio" name="burger" onclick="burger2()">Hamburguer Frango
+              <input type="radio" name="burger" onclick="burger2()">Hamburguer Frango R$1,50
               <span class="checkmark"></span>
             </label>
             
             <label class="container">
-            <input type="radio" name="burger" onclick="burger3()">Hamburguer de Soja
+            <input type="radio" name="burger" onclick="burger3()">Hamburguer de Soja R$3,00
             <span class="checkmark"></span>
             </label>
             
-            <label class="container">
-            <input type="radio" name="burger" onclick="burger4()">Hamburguer Supremo
-            <span class="checkmark"></span>
-            </label>
+           
             </div>
             
             <div class="teste">
@@ -156,20 +151,60 @@
                 
                 </div>
               </div>
+             
             <div class="vitrine col-sm-6">
                 <div id="myDiv" class="w3-container w3-center w3-animate-right" ></div>
                 <div id="adicional"></div>
                 <div id="queijo"></div>
                 <div id="burger" class="w3-container w3-center w3-animate-right"></div>
                 <div id="myPao"></div>
+                <button  onclick="typeWriter()">Finalizar</button>
+                <p id="demo"></p>
+                <script>
+                var i = 0;
+                var txt = 'Seu lanche está sendo preparado! Obrigado pela preferência . . .';
+                var speed = 50;
+
+                function typeWriter() {
+                  if (i < txt.length) {
+                    document.getElementById("demo").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                  }
+                }
+
+                </script>
               </div>
+           </div>
+           
       </section>
+     <footer class="container-fluid rodape">
+        <div class="col-sm-4"><img src="img/logo.png" alt="ByteBurger"></div>
+        <div class="col-sm-2">
+          <h2>Byte Info</h2>
+          <ul>
+            <a th:href="@{/sobre-nos}"><li>Sobre a ByteBurger</li></a>
+            <a th:href="@{/cardapio}"><li>Cardápio</li></a>
+            <a th:href="@{/cadastro}"><li>Login</li></a>
+            <a th:href="@{/car}"><li>Carrinho</li></a>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+            <h2>Redes Sociais</h2>
+            <ul>
+              <a href="#"><li><i class="fab fa-facebook-square"></i> Facebook</li></a>
+              <a href="#"><li><i class="fab fa-instagram"></i> Instagram</li></a>
+              <a href="#"><li><i class="fab fa-whatsapp"></i> WhatsApp</li></a>
+             
+            </ul>
+          </div>
+      </footer>
 
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <!-- Optional JavaScript -->
-    <script src="assets/js/canvas.js"></script>
+    <script src="js/script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
