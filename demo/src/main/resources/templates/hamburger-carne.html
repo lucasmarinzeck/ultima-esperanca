@@ -49,10 +49,10 @@
                 <h2>Angus Byte</h2>
                 <small>Hambúrger de carne (Angus 180g), Tomate, Alface, Cebola, Cheedar</small>
                 <h3>Preço R$ 15,99 reais</h3>
-                <form action="#" th:action="@{/}" method="post">
-	                <input type="text" value="Angus Byte">
-	                <input type="text" value="15,99">
-	                <button> Adicionar ao carrinho </button>
+                <form action="#" th:action="@{/carrinho-add}" method="post">
+	                <input type="text" name="item" value="Angus Byte">
+	                <input type="text" name="valor" value="15.99">
+	                <button type="submit"> Adicionar ao carrinho </button>
                 </form>
               </div>
             </div>
@@ -67,7 +67,7 @@
                   <h3>Preço R$ 13,50 reais</h3>
                   <form action="#" th:action="@{/}" method="post">
                 	<input type="text" value="15,99">
-                	<button> Adicionar ao carrinho </button>
+                	<button type="submit"> Adicionar ao carrinho </button>
                	</form>
                 </div>
               </div>
