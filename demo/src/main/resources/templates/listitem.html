@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http://www.ultaq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<a href="/list-itens">Atualizar lista de itens</a>
+	<h2>Itens</h2>
+	<table>
+		<tr th:each="item : ${itens}">
+			<td th:text="${item.nome}">
+			<td th:text="${item.preco}">
+	</table>
+	<p>Total: <span th:text="${total}"></span></p>
+</body>
+</html>
