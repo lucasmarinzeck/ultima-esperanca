@@ -71,40 +71,40 @@
           <div class="title"><h1>Opções</h1></div>
 
             <div class="col-sm-6">
-            <div class="teste">
+            <div class="teste pao">
             <h2> Pão </h2>
-            <label class="container">
-              <input type="radio" name="pao" onclick="pao()">Italiano
+            <label class="container a">
+              <input type="radio" name="pao" onclick="pao()">Italiano  R$4,00
               <span class="checkmark"></span>
             </label>
             
-            <label class="container">
-              <input type="radio" name="pao" onclick="pao2()">Frances
+            <label class="container b">
+              <input type="radio" name="pao" onclick="pao2()">Frances R$3,85
               <span class="checkmark"></span>
             </label>
             
-            <label class="container"><input type="radio" name="pao" onclick="pao3()">Brioche
+            <label class="container c"><input type="radio" name="pao" onclick="pao3()">Brioche  R$4,00
             <span class="checkmark"></span>
             </label>
             
             
             </div>
             
-            <div class="teste">
+            <div class="teste burger">
             <h2> Hamburger </h2>
             
             <label class="container">
-              <input type="radio" name="burger"  onclick="burger()">Hamburguer Tradicional 
+              <input type="radio" name="burger"  onclick="burger()">Hamburguer Tradicional R$2,00
               <span class="checkmark"></span>
             </label> 
             
             <label class="container">
-              <input type="radio" name="burger" onclick="burger2()">Hamburguer Frango
+              <input type="radio" name="burger" onclick="burger2()">Hamburguer Frango R$1,50
               <span class="checkmark"></span>
             </label>
             
             <label class="container">
-            <input type="radio" name="burger" onclick="burger3()">Hamburguer de Soja
+            <input type="radio" name="burger" onclick="burger3()">Hamburguer de Soja R$3,00
             <span class="checkmark"></span>
             </label>
             
@@ -151,17 +151,54 @@
                 
                 </div>
               </div>
+             
             <div class="vitrine col-sm-6">
                 <div id="myDiv" class="w3-container w3-center w3-animate-right" ></div>
                 <div id="adicional"></div>
                 <div id="queijo"></div>
                 <div id="burger" class="w3-container w3-center w3-animate-right"></div>
                 <div id="myPao"></div>
-                <button>Finalizar</button>
+                <button  onclick="typeWriter()">Finalizar</button>
+                <p id="demo"></p>
+                <script>
+                var i = 0;
+                var txt = 'Seu lanche está sendo preparado! Obrigado pela preferência . . .';
+                var speed = 50;
+
+                function typeWriter() {
+                  if (i < txt.length) {
+                    document.getElementById("demo").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                  }
+                }
+
+                </script>
               </div>
            </div>
            
       </section>
+     <footer class="container-fluid rodape">
+        <div class="col-sm-4"><img src="img/logo.png" alt="ByteBurger"></div>
+        <div class="col-sm-2">
+          <h2>Byte Info</h2>
+          <ul>
+            <a th:href="@{/sobre-nos}"><li>Sobre a ByteBurger</li></a>
+            <a th:href="@{/cardapio}"><li>Cardápio</li></a>
+            <a th:href="@{/cadastro}"><li>Login</li></a>
+            <a th:href="@{/car}"><li>Carrinho</li></a>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+            <h2>Redes Sociais</h2>
+            <ul>
+              <a href="#"><li><i class="fab fa-facebook-square"></i> Facebook</li></a>
+              <a href="#"><li><i class="fab fa-instagram"></i> Instagram</li></a>
+              <a href="#"><li><i class="fab fa-whatsapp"></i> WhatsApp</li></a>
+             
+            </ul>
+          </div>
+      </footer>
 
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

@@ -398,8 +398,8 @@ function pao3() {
 function burger(){
   var z = document.getElementById('burger');
 
-  z.style.backgroundImage = "url(img/burger-2.png)";
-  z.style.margin = "0px 0px -32px 25px";
+  z.style.backgroundImage = "url(img/burger.png)";
+   z.style.margin = "0px 0px -42px 18px";
 }
 function burger2(){
   var z = document.getElementById('burger');
@@ -408,9 +408,8 @@ function burger2(){
 }
 function burger3(){
   var z = document.getElementById('burger');
- z.style.display = 'block';
- z.style.borderRadius = "25px";
-  z.style.backgroundColor = " #4d4d00";
+   z.style.backgroundImage = "url(img/veganoo.png)";
+  z.style.margin = "0px 0px -42px 18px";
 }
 
 
@@ -418,17 +417,17 @@ function burger3(){
 function queijo(){
   var z = document.getElementById('queijo');
   z.style.backgroundImage = "url(img/queijoo.png)";
-  z.style.margin = "0px 0px -32px 10px";
+  z.style.margin = "0px 0px -8px 10px";
 }
 function queijo2(){
   var z = document.getElementById('queijo');
-  z.style.backgroundImage = "url(img/queiijo.png)";
-  z.style.margin = "0px 0px -32px 10px";
+  z.style.backgroundImage = "url(img/queijao.png)";
+  z.style.margin = "0px 0px -8px 10px";
 }
 function queijo3(){
   var z = document.getElementById('queijo');
   z.style.backgroundImage = "url(img/cheedar-2.png)";
-  z.style.margin = "0px 0px -32px 20px";
+  z.style.margin = "0px 0px -8px 20px";
 }
 
 
@@ -446,9 +445,8 @@ function adicional2(){
 function adicional3(){
   var x = document.getElementById('adicional');
   x.style.backgroundImage = "url(img/saladinha.png)";
-  x.style.margin = "0px 0px 0px 30px";
+  x.style.margin = "0px 0px 0px 10px";
 }
-
 
 
 
