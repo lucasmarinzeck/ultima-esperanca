@@ -1,0 +1,146 @@
+<!doctype html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultaq.net.nz/thymeleaf/layout">
+  <head>
+    <title>ByteBurger</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+      <link rel="stylesheet" href="/css/style.css">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Changa+One|Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <header class="nav-container container">
+        <div class="topnav" id="myTopnav">
+          <a ><img src="img/logo.png"></a>
+          <div class="navbar">
+               <a th:href="@{/index}" >Home</a>
+            <a th:href="@{/cardapio}">Cardápio</a>
+            <a th:href="@{/contato}">Sobre nós</a>
+            <a th:href="@{/cadastro}">Login</a>
+            <a href="/list-itens"><i class="fas fa-shopping-cart"></i></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+
+        
+      </header>
+        <section class="container-fluid cardapio">
+          <div class="container">
+            <div class="title text-center">
+                <h1>Hambúrgers de Carne</h1>
+            </div>
+            
+            <div class="row box">
+              <div class="col-sm-5 box-image">
+                <img src="img/hamburger-carne.png " alt="">
+              </div>
+              <div class="col-sm-7 box-text">
+
+                <h2>Onion Byte</h2>
+                <small>Hambúrger de Carne (120g), Molho Barbecue, Queijo, Cebola Empanada, Maionese</small>
+                <h3>Preço R$ 11,99 reais</h3>
+                <form action="#" th:action="@{/carrinho-add}" method="post">
+	                <input type="text" name="item" value="Onion Byte">
+	                <input type="text" name="valor" value="11.99">
+                  
+	                <button type="submit"> Adicionar ao carrinho </button>
+                </form>
+              </div>
+            </div>
+
+            <div class="row box">
+                <div class="col-sm-5 box-image">
+                    <img src="img/hamburger-carne-2.png" alt="">
+                </div>
+                <div class="col-sm-7 box-text">
+                  <h2>Angus Kilo Byte</h2>
+                  <small>Hambúrger de Carne (Angus 180g), Tomate, Alface, Cebola Roxa, Cheedar</small>
+                  <h3>Preço R$ 13,50 reais</h3>
+
+                  <form action="#" th:action="@{/carrinho-add}" method="post">
+	                <input type="text" name="item" value="Angus Kilo Byte">
+	                <input type="text" name="valor" value="13.50">
+	                <button type="submit"> Adicionar ao carrinho </button>
+                </form>
+                </div>
+              </div>
+
+            <div class="row box">
+              <div class="col-sm-5 box-image">
+                <img src="img/hamburger-carne-3.png" alt="">
+              </div>
+              <div class="col-sm-7 box-text">
+                <h2>Picanha Mega Byte</h2>
+                <small>2 Hambúrger de Picanha (120g), Tomate, Alface, Cebola, Cheedar</small>
+                <h3>Preço R$ 17,50 reais</h3>
+                <form action="#" th:action="@{/carrinho-add}" method="post">
+	                <input type="text" name="item" value="Picanha Mega Byte">
+	                <input type="text" name="valor" value="17.50">
+	                <button type="submit"> Adicionar ao carrinho </button>
+                </form>
+              </div>
+            </div>
+            
+
+            <div class="row box">
+                <div class="col-sm-5 box-image">
+                    <img src="img/hamburger-triplo.png" alt="">
+                </div>
+                <div class="col-sm-7 box-text">
+                  <h2>Beef Zetta Byte</h2>
+                  <small>3 Hambúrger de Carne (120g), Alface, Bacon, Cheedar</small>
+                  <h3>Preço R$ 18,00 reais</h3>
+                  <form action="#" th:action="@{/carrinho-add}" method="post">
+	                <input type="text" name="item" value="Beef Zetta Byte">
+	                <input type="text" name="valor" value="18.00">
+	                <button type="submit"> Adicionar ao carrinho </button>
+                </form>
+                </div>
+              </div>
+
+
+          </div>
+              
+        </section>
+		<footer class="container-fluid rodape">
+     	<div class="container">
+	        <div class="col-sm-6"><img src="img/logo-footer.png" alt="ByteBurger"></div>
+	        <div class="col-sm-3">
+	          <h2>Byte Info</h2>
+	          <ul>
+	            <a th:href="@{/sobre-nos}"><li>Sobre a ByteBurger</li></a>
+	            <a th:href="@{/cardapio}"><li>Cardápio</li></a>
+	            <a th:href="@{/cadastro}"><li>Login</li></a>	           
+	          </ul>
+	        </div>
+	        <div class="col-sm-3">
+	            <h2>Redes Sociais</h2>
+	            <ul>
+	              <a href="#"><li><i class="fab fa-facebook-square"></i> Facebook</li></a>
+	              <a href="#"><li><i class="fab fa-instagram"></i> Instagram</li></a>
+	              <a href="#"><li><i class="fab fa-whatsapp"></i> WhatsApp</li></a>
+	             
+	            </ul>
+	          </div>
+	     </div>
+      </footer>
+		
+       <!-- Optional JavaScript -->
+    <script src="assets/js/canvas.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

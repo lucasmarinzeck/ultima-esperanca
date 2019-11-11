@@ -1,0 +1,94 @@
+<!doctype html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultaq.net.nz/thymeleaf/layout">
+  <head>
+    <title>ByteBurger</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+      <link rel="stylesheet" href="/css/style.css">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Changa+One|Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <header class="nav-container container">
+         <div class="topnav" id="myTopnav">
+          <a ><img src="img/logo.png"></a>
+          <div class="navbar">
+               <a th:href="@{/index}" >Home</a>
+            <a th:href="@{/cardapio}">Cardápio</a>
+            <a th:href="@{/contato}">Sobre nós</a>
+            <a th:href="@{/}">Login</a>
+            <a href="/list-itens"><i class="fas fa-shopping-cart"></i></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+
+        
+      </header>
+      <section class="container">
+      	
+		<div class="title"><h1>Itens</h1></div>
+		<div class="col-sm-6">
+			<table class="carrinho">
+				<tr>
+					<th>Produto</th>
+					<th>Preço</th>
+					
+				</tr>
+				<tr th:each="item : ${itens}">
+					<td th:text="${item.nome}">
+					<td th:text="${item.preco}">
+					
+			</table>
+			<a href="/list-itens"><i class="fas fa-sync-alt"></i> Atualizar Lista de Itens</a>
+		</div>
+			<div class="total col-sm-6">
+				
+				<h2>Total: <span th:text="${total}"></span> Reais</h2>
+				<button>Finalizar</button>
+			</div>
+		
+      </section>
+      
+      
+		<footer class="container-fluid rodape">
+     	<div class="container">
+	        <div class="col-sm-6"><img src="img/logo-footer.png" alt="ByteBurger"></div>
+	        <div class="col-sm-3">
+	          <h2>Byte Info</h2>
+	          <ul>
+	            <a th:href="@{/sobre-nos}"><li>Sobre a ByteBurger</li></a>
+	            <a th:href="@{/cardapio}"><li>Cardápio</li></a>
+	            <a th:href="@{/cadastro}"><li>Login</li></a>	           
+	          </ul>
+	        </div>
+	        <div class="col-sm-3">
+	            <h2>Redes Sociais</h2>
+	            <ul>
+	              <a href="#"><li><i class="fab fa-facebook-square"></i> Facebook</li></a>
+	              <a href="#"><li><i class="fab fa-instagram"></i> Instagram</li></a>
+	              <a href="#"><li><i class="fab fa-whatsapp"></i> WhatsApp</li></a>
+	             
+	            </ul>
+	          </div>
+	     </div>
+      </footer>
+		
+       <!-- Optional JavaScript -->
+    <script src="assets/js/canvas.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

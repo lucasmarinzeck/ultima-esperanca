@@ -5,12 +5,12 @@ html {
 *, *:before, *:after {
   box-sizing: border-box;
 }
-* {box-sizing: border-box; list-style-type:none;}
+* {box-sizing: border-box; list-style-type: none;}
 body { margin:0; background-color: #171717; color: #fff;}
 
 a{color: #fff; text-decoration: none; transition:.5s ease;}
 a:hover{text-decoration: none;}
-
+p{color: #fff;}
 label{
   font-weight: 400;
 }
@@ -60,7 +60,7 @@ label{
   margin-right: 0;
 }
 .navbar a:hover {
-  background-color: #0b2233;
+  background-color: #313131;
   color: white;
 }
 
@@ -157,13 +157,13 @@ label{
  
 }
 #burger{
-  width: 100%;
+  width: 450px;
   height: 200px;
   background-color: transparent;
   background-repeat: no-repeat;
 }
 #queijo{
-  width: 100%;
+  width: 450px;
   height: 120px;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -176,7 +176,7 @@ label{
  
 }
 #adicional{
-  width: 100%;
+  width: 450px;
   height: 120px;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -185,10 +185,18 @@ label{
   padding: 8rem 0 0 12rem;
   background-color: #171717;
   width: 40%;
-
+  color: #fff;
+}
+.vitrine button{
+	background-color: red; 
+	border: none; 
+	padding: 18px 32px; 
+	text-transform: uppercase; 
+	letter-spacing: 4px;
+	border-radius: 25px;
+	margin-left: 6rem;
 }
 .teste{
-
     margin-top: 32px;
 }
 .teste input{
@@ -197,13 +205,53 @@ display: list-item;
 }
 .teste label {
 	display: flex;
+	
 }
 .teste p{
 	margin-left: 32px;
 }
 
-
-
+.teste h3{
+	margin-top: 0;
+	padding-top: 4px;
+	font-size: 22px;
+}
+.teste .a h3{
+	padding-left: 21rem;
+}
+.teste .b h3{
+	padding-left: 20rem;
+}
+.teste .c h3{
+	padding-left: 20.5rem;
+}
+.teste .d h3{
+	padding-left: 46px;
+}
+.teste .e h3{
+	padding-left: 8.2rem;
+}
+.teste .f h3{
+	padding-left:7.6rem;
+}
+.teste .g h3{
+	padding-left: 15.6rem;
+}
+.teste .h h3{
+	padding-left: 10.2rem;
+}
+.teste .i h3{
+	padding-left: 12.4rem;
+}
+.teste .j h3{
+	padding-left: 21rem;
+}
+.teste .k h3{
+	padding-left: 20rem;
+}
+.teste .l h3{
+	padding-left: 21rem;
+}
 /* Cardapio Page */
 .title{
   text-align: center;
@@ -215,10 +263,7 @@ display: list-item;
   text-transform: uppercase;
   padding: 32px 18px;
 }
-.cardapio{
-  
-  padding: 64px 0;
-}
+
 
 .tab-lanche{
   padding: 2rem 0 4rem 2rem;
@@ -785,3 +830,84 @@ textarea:focus {
 
 
 
+/* Sobre nos */
+
+
+
+.equipe .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  max-width: 330px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  padding: 32px;
+  margin: 0px 18px;
+  
+}
+.equipe h2{
+  color: #000;
+}
+.equipe p{
+	color: #000;
+}
+.equipe .title {
+  color: #000;
+  font-size: 18px;
+}
+
+
+.equipe a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #000;
+}
+.trabalhamos p{
+
+	padding: 0 12rem;
+}
+
+/* Footer */
+.rodape{
+	margin-top: 32rem;
+	padding: 4rem 0;
+	background-color: #313131;
+}
+
+.rodape a:hover{
+
+	color: #e6e6e6;
+}
+.rodape li{
+	margin-left: -4rem;
+	padding: 0.4rem 0;
+}
+.rodape img{
+	margin-top: 32px;
+}
+.rodape ul{
+	margin-top: 2rem;
+}
+
+/* Carrinho */
+
+.carrinho tr td{
+	border: 1px solid #fff;
+	padding: 18px 32px 18px 32px;
+}
+.total h2{
+	text-align: center;
+	margin: 3rem 0 0 -2rem;
+	background-color: #313131;
+  	padding: 20px 0 20px 32px;
+}
+.total button{
+	background-color: red;
+    border: none;
+    padding: 12px 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-radius: 25px;
+    margin-left: 16rem;
+    margin-top: 6rem;
+}
