@@ -1,6 +1,7 @@
 package com.aps.controller;
 
 
+import java.text.DecimalFormat;
 import java.util.Date;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -47,7 +48,8 @@ public class Carrinho {
 		itensIT.forEach(i -> {
 			totalAtomic.accumulateAndGet(i.getPreco(), (x1, x2) -> x1+x2);
 		});
-		view.addObject("total", totalAtomic.get().toString());
+		
+		view.addObject("total", String.format("%.2f", totalAtomic.get()));
 		view.addObject("itens", itensIT);
 		return view;
 	}
