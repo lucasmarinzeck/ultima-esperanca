@@ -10,7 +10,7 @@ body { margin:0; background-color: #171717; color: #fff;}
 
 a{color: #fff; text-decoration: none; transition:.5s ease;}
 a:hover{text-decoration: none;}
-
+p{color: #fff;}
 label{
   font-weight: 400;
 }
@@ -60,7 +60,7 @@ label{
   margin-right: 0;
 }
 .navbar a:hover {
-  background-color: #0b2233;
+  background-color: #313131;
   color: white;
 }
 
@@ -197,7 +197,6 @@ label{
 	margin-left: 6rem;
 }
 .teste{
-
     margin-top: 32px;
 }
 .teste input{
@@ -212,17 +211,46 @@ display: list-item;
 	margin-left: 32px;
 }
 
-.pao .a {
-	word-spacing: 21rem;
+.teste h3{
+	margin-top: 0;
+	padding-top: 4px;
+	font-size: 22px;
 }
-.pao .b {
-	word-spacing: 20rem;
+.teste .a h3{
+	padding-left: 21rem;
 }
-.pao .c {
-	word-spacing: 20.5rem;
+.teste .b h3{
+	padding-left: 20rem;
 }
-burger{
-	
+.teste .c h3{
+	padding-left: 20.5rem;
+}
+.teste .d h3{
+	padding-left: 46px;
+}
+.teste .e h3{
+	padding-left: 8.2rem;
+}
+.teste .f h3{
+	padding-left:7.6rem;
+}
+.teste .g h3{
+	padding-left: 15.6rem;
+}
+.teste .h h3{
+	padding-left: 10.2rem;
+}
+.teste .i h3{
+	padding-left: 12.4rem;
+}
+.teste .j h3{
+	padding-left: 21rem;
+}
+.teste .k h3{
+	padding-left: 20rem;
+}
+.teste .l h3{
+	padding-left: 21rem;
 }
 /* Cardapio Page */
 .title{
@@ -817,8 +845,11 @@ textarea:focus {
   margin: 0px 18px;
   
 }
-.equipe h2,p{
+.equipe h2{
   color: #000;
+}
+.equipe p{
+	color: #000;
 }
 .equipe .title {
   color: #000;
@@ -835,18 +866,39 @@ textarea:focus {
 
 /* Footer */
 .rodape{
-	margin-top: 64px;
-	border-top: 1px solid #fff;
+	margin-top: 32rem;
+	background-color: #313131;
 }
 .rodape li{
 	margin-left: -4rem;
 	padding: 0.4rem 0;
 }
-
+.rodape img{
+	margin-top: 32px;
+}
 .rodape ul{
 	margin-top: 2rem;
 }
 
+/* Carrinho */
 
-
-
+.carrinho tr td{
+	border: 1px solid #fff;
+	padding: 18px 32px 18px 32px;
+}
+.total h2{
+	text-align: center;
+	margin: 3rem 0 0 -2rem;
+	background-color: #313131;
+  	padding: 20px 0 20px 32px;
+}
+.total button{
+	background-color: red;
+    border: none;
+    padding: 12px 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-radius: 25px;
+    margin-left: 16rem;
+    margin-top: 6rem;
+}

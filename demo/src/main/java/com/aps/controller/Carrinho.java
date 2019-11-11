@@ -29,7 +29,7 @@ public class Carrinho {
 		System.out.println("Adicionado ao carrinho");
 		Item itemEntity = new Item(item, Double.valueOf(valor));
 		itemRepo.save(itemEntity);
-		return "redirect:/hamburger-carne";
+		return "redirect:/cardapio";
 	}
 
 //	private void carrinhoEntrada(Item item) {
