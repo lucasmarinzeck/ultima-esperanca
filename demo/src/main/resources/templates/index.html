@@ -71,41 +71,48 @@
           <div class="title"><h1>Opções</h1></div>
 
             <div class="col-sm-6">
-            <div class="teste pao">
+            <div class="teste ">
             <h2> Pão </h2>
+            
             <label class="container a">
-              <input type="radio" name="pao" onclick="pao()">Italiano  R$4,00
+              <input type="radio" name="pao" onclick="pao()">Italiano  
               <span class="checkmark"></span>
+              <h3>R$ 4,00</h3>
             </label>
             
             <label class="container b">
-              <input type="radio" name="pao" onclick="pao2()">Frances R$3,85
+              <input type="radio" name="pao" onclick="pao2()">Frances
               <span class="checkmark"></span>
+              <h3>R$ 3,85</h3>
             </label>
             
-            <label class="container c"><input type="radio" name="pao" onclick="pao3()">Brioche  R$4,00
+            <label class="container c"><input type="radio" name="pao" onclick="pao3()">Brioche  
             <span class="checkmark"></span>
+            <h3>R$ 4,00</h3>
             </label>
             
             
             </div>
             
-            <div class="teste burger">
+            <div class="teste">
             <h2> Hamburger </h2>
             
-            <label class="container">
-              <input type="radio" name="burger"  onclick="burger()">Hamburguer Tradicional <h3>R$2,00</h3>
+            <label class="container d">
+              <input type="radio" name="burger"  onclick="burger()">Hamburguer Tradicional 
               <span class="checkmark"></span>
+              <h3>R$ 2,50</h3>
             </label> 
             
-            <label class="container">
-              <input type="radio" name="burger" onclick="burger2()">Hamburguer Frango R$1,50
+            <label class="container e">
+              <input type="radio" name="burger" onclick="burger2()">Hamburguer Frango
               <span class="checkmark"></span>
+              <h3>R$ 1,50</h3>
             </label>
             
-            <label class="container">
-            <input type="radio" name="burger" onclick="burger3()">Hamburguer de Soja R$3,00
+            <label class="container f">
+            <input type="radio" name="burger" onclick="burger3()">Hamburguer de Soja 
             <span class="checkmark"></span>
+            <h3>R$ 3,00</h3>
             </label>
             
            
@@ -113,40 +120,53 @@
             
             <div class="teste">
             <h2> Queijo </h2>
-            
-            <label class="container">
+            <label class="container ">
+              <input type="radio" name="cheese" onclick="nenhum()">Sem queijo  
+              <span class="checkmark"></span>
+              
+            </label>
+            <label class="container g">
               <input type="radio" name="cheese"  onclick="queijo()">Queijo Prato 
               <span class="checkmark"></span>
+              <h3>R$ 1,50</h3>
             </label> 
             
-            <label class="container">
+            <label class="container h">
               <input type="radio" name="cheese" onclick="queijo2()">Queijo Mozzarella
               <span class="checkmark"></span>
+              <h3>R$ 2,00</h3>
             </label>
             
-            <label class="container">
+            <label class="container i">
               <input type="radio" name="cheese" onclick="queijo3()">Queijo Cheddar
               <span class="checkmark"></span>
+              <h3>R$ 3,00</h3>
             </label>
             
             </div>
 
             <div class="teste">
                 <h2> Adicionais </h2>
-                
-                <label class="container">
+                <label class="container ">
+              		<input type="radio" name="adicional" onclick="nenhum()">Nenhum Adicional  
+              		<span class="checkmark"></span>             
+            	</label>
+                <label class="container j">
                   <input type="radio" name="adicional"  onclick="adicional()">Bacon 
                   <span class="checkmark"></span>
+                   <h3>R$ 3,00</h3>
                 </label> 
                 
-                <label class="container">
+                <label class="container k">
                   <input type="radio" name="adicional" onclick="adicional2()">Tomate
                   <span class="checkmark"></span>
+                   <h3>R$ 1,00</h3>
                 </label>
                 
-                <label class="container">
+                <label class="container l">
                   <input type="radio" name="adicional" onclick="adicional3()">Alface
                   <span class="checkmark"></span>
+                   <h3>R$ 0,80</h3>
                 </label>
                 
                 </div>
@@ -179,25 +199,26 @@
            
       </section>
      <footer class="container-fluid rodape">
-        <div class="col-sm-4"><img src="img/logo.png" alt="ByteBurger"></div>
-        <div class="col-sm-2">
-          <h2>Byte Info</h2>
-          <ul>
-            <a th:href="@{/sobre-nos}"><li>Sobre a ByteBurger</li></a>
-            <a th:href="@{/cardapio}"><li>Cardápio</li></a>
-            <a th:href="@{/cadastro}"><li>Login</li></a>
-            <a th:href="@{/car}"><li>Carrinho</li></a>
-          </ul>
-        </div>
-        <div class="col-sm-6">
-            <h2>Redes Sociais</h2>
-            <ul>
-              <a href="#"><li><i class="fab fa-facebook-square"></i> Facebook</li></a>
-              <a href="#"><li><i class="fab fa-instagram"></i> Instagram</li></a>
-              <a href="#"><li><i class="fab fa-whatsapp"></i> WhatsApp</li></a>
-             
-            </ul>
-          </div>
+     	<div class="container">
+	        <div class="col-sm-6"><img src="img/logo-footer.png" alt="ByteBurger"></div>
+	        <div class="col-sm-3">
+	          <h2>Byte Info</h2>
+	          <ul>
+	            <a th:href="@{/sobre-nos}"><li>Sobre a ByteBurger</li></a>
+	            <a th:href="@{/cardapio}"><li>Cardápio</li></a>
+	            <a th:href="@{/cadastro}"><li>Login</li></a>	           
+	          </ul>
+	        </div>
+	        <div class="col-sm-3">
+	            <h2>Redes Sociais</h2>
+	            <ul>
+	              <a href="#"><li><i class="fab fa-facebook-square"></i> Facebook</li></a>
+	              <a href="#"><li><i class="fab fa-instagram"></i> Instagram</li></a>
+	              <a href="#"><li><i class="fab fa-whatsapp"></i> WhatsApp</li></a>
+	             
+	            </ul>
+	          </div>
+	     </div>
       </footer>
 
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
