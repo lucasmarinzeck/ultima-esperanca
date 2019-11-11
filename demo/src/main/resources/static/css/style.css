@@ -869,6 +869,11 @@ textarea:focus {
 	margin-top: 32rem;
 	background-color: #313131;
 }
+
+.rodape a:hover{
+
+	color: #e6e6e6;
+}
 .rodape li{
 	margin-left: -4rem;
 	padding: 0.4rem 0;
