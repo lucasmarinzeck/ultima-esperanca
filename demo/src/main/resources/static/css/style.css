@@ -862,11 +862,15 @@ textarea:focus {
   font-size: 22px;
   color: #000;
 }
+.trabalhamos p{
 
+	padding: 0 12rem;
+}
 
 /* Footer */
 .rodape{
 	margin-top: 32rem;
+	padding: 4rem 0;
 	background-color: #313131;
 }
 
