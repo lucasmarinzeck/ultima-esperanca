@@ -10,7 +10,7 @@ body { margin:0; background-color: #171717; color: #fff;}
 
 a{color: #fff; text-decoration: none; transition:.5s ease;}
 a:hover{text-decoration: none;}
-
+p{color: #fff;}
 label{
   font-weight: 400;
 }
@@ -60,7 +60,7 @@ label{
   margin-right: 0;
 }
 .navbar a:hover {
-  background-color: #0b2233;
+  background-color: #313131;
   color: white;
 }
 
@@ -845,8 +845,11 @@ textarea:focus {
   margin: 0px 18px;
   
 }
-.equipe h2,p{
+.equipe h2{
   color: #000;
+}
+.equipe p{
+	color: #000;
 }
 .equipe .title {
   color: #000;
@@ -863,18 +866,39 @@ textarea:focus {
 
 /* Footer */
 .rodape{
-	margin-top: 64px;
-	border-top: 1px solid #fff;
+	margin-top: 32rem;
+	background-color: #313131;
 }
 .rodape li{
 	margin-left: -4rem;
 	padding: 0.4rem 0;
 }
-
+.rodape img{
+	margin-top: 32px;
+}
 .rodape ul{
 	margin-top: 2rem;
 }
 
+/* Carrinho */
 
-
-
+.carrinho tr td{
+	border: 1px solid #fff;
+	padding: 18px 32px 18px 32px;
+}
+.total h2{
+	text-align: center;
+	margin: 3rem 0 0 -2rem;
+	background-color: #313131;
+  	padding: 20px 0 20px 32px;
+}
+.total button{
+	background-color: red;
+    border: none;
+    padding: 12px 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-radius: 25px;
+    margin-left: 16rem;
+    margin-top: 6rem;
+}
